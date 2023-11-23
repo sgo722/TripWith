@@ -11,7 +11,7 @@ public class Member {
     @Id
     @GeneratedValue
     private Long id;
-
+  
     @OneToMany(mappedBy = "member")
     private List<Board> board;
     private String name;

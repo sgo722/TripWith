@@ -1,8 +1,10 @@
 package alom.tripwith.domain;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 import lombok.Getter;
 
 import java.time.LocalDateTime;
@@ -16,9 +18,8 @@ public class ChatContent {
     @GeneratedValue
     private Long id;
 
+    @ManyToOne(fetch = FetchType.LAZY)
     private Chat chat;
-
-    private Member member;
 
     private String content;
 
