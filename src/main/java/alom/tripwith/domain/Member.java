@@ -1,6 +1,7 @@
 package alom.tripwith.domain;
 
 import jakarta.persistence.*;
+import java.util.List;
 import lombok.Getter;
 
 @Entity
@@ -23,4 +24,8 @@ public class Member {
     private Mbti mbti;
 
     private String instar;
+
+    @OneToMany(mappedBy = "member")
+    private List<Chat> chats;
+
 }
