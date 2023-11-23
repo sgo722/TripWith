@@ -11,6 +11,8 @@ public class Member {
     @GeneratedValue
     private Long id;
 
+    @OneToMany(mappedBy = "member", fetch = FetchType.LAZY)
+    private Board board;
     private String name;
 
     private String birth;
