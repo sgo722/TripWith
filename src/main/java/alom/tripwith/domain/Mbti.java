@@ -1,6 +1,9 @@
 package alom.tripwith.domain;
 
 public enum Mbti {
+    ISTJ, ISFJ, INFJ, INTJ,
+    ISTP, ISFP, INFP, INTP,
+    ESTP, ESFP, ENFP, ENTP,
+    ESTJ, ESFJ, ENFJ, ENTJ,
 
-    // 지훈이 코드에서 작업해놔서 복붙해야함
 }
