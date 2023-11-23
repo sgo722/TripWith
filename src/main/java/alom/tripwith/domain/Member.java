@@ -11,10 +11,13 @@ public class Member {
     @Id
     @GeneratedValue
     private Long id;
-
-    @OneToMany(mappedBy = "member", fetch = FetchType.LAZY)
+  
+    @OneToMany(mappedBy = "member")
     private List<Board> board;
     private String name;
+
+    @OneToMany(mappedBy = "member")
+    private List<Like> like;
 
     private String birth;
 
