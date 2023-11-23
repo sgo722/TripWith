@@ -20,7 +20,6 @@ public class Chat {
     @ManyToOne(fetch = FetchType.LAZY)
     private Member member;
 
-
     private Long partnerId;
 
     private String code;

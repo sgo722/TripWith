@@ -13,7 +13,7 @@ public class Member {
     private Long id;
 
     @OneToMany(mappedBy = "member", fetch = FetchType.LAZY)
-    private Board board;
+    private List<Board> board;
     private String name;
 
     private String birth;
